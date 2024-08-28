@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { ValidationError, useForm } from "@formspree/react";
+// import { ValidationError, useForm } from "@formspree/react";
 import axios from "axios";
 import resume from "../assets/Resume-Ritika-Jaiswal.pdf";
 import Typewriter from 'react-typewriter-effect';
@@ -68,8 +68,9 @@ const Portfolio = ({ setIsAlertOpen, setAlertMessage, setAlertType }) => {
           </div>
           <a
             href={resume}
-            target={"_blank"}
-            className={"text-white hover:underline text-[0.6rem] md:text-lg"}
+            target="_blank"
+            rel="noopener noreferrer"  
+            className="text-white hover:underline text-[0.6rem] md:text-lg"
           >
             Resume!
           </a>
